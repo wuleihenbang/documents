@@ -67,10 +67,8 @@
 
   1. 编译并运行示例项目
 
-       连接上 Android 设备后，用 Android Studio 打开 `NELiveKit/SampleCode/Android`  示例项目，然后编译并运行示例项目。运行效果如下图所示
-
-      <image width="25%" src="../images/demo_meeting_main_page.png">
-
+       连接上 Android 设备后，用 Android Studio 打开 `NELiveKit/SampleCode/Android`  示例项目，然后编译并运行示例项目。
+  
 ## 示例项目登录账号
 
 为了体验示例项目中的创建直播间功能，在以上完善应用Appkey的基础上，还需要使用互动直播账号完成SDK的登录鉴权。
