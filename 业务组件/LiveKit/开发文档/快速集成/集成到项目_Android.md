@@ -46,7 +46,7 @@
 
 3. 权限处理
 
-    互动直播SDK正常工作需要应用获取以下权限
+   NELiveKit应用正常工作需要应用获取以下权限
     ```xml
     <!-- 网络相关 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -525,6 +525,39 @@
             //TODO when requestLiveList fail
         }
     });
+    ```
+
+#### 注意事项
+
+- 该接口仅支持登录和未登录状态调用
+
+--------------------
+
+### 直播间内的操作
+
+#### 描述
+
+在直播间内，可以做切换摄像头、开关音频、开关视频等操作
+
+#### 业务流程
+
+1. 调用查询直播间列表接口并进行回调处理，可根据错误码判断是否成功
+
+    ```java
+   //开启预览
+   NELiveKit.getInstance.getMediaController().startPreview(NeteaseView directCDNVideoView, boolean frontCamera);
+   NELiveKit.getInstance.getMediaController().stopPreview();
+   //切换摄像头
+   NELiveKit.getInstance.getMediaController().switchCamera();
+   //开关音频
+   NELiveKit.getInstance.getMediaController().muteLocalAudio(boolean mute, NECallback<Unit> callback);
+   //开关视频
+   NELiveKit.getInstance.getMediaController().muteLocalVideo(boolean mute, NECallback<Unit> callback);
+   //在自己的直播间静音PK的主播
+   NELiveKit.getInstance.getMediaController().mutePKAudio(String uuid, boolean mute, NECallback<Unit> callback);
+   //绑定PK时，自己的画布
+   NELiveKit.getInstance.getMediaController().bindLocalCanvas(NERoomVideoView view);
+   NELiveKit.getInstance.getMediaController().bindRemoteCanvas(view: NERoomVideoView, userUuid: String);
     ```
 
 #### 注意事项

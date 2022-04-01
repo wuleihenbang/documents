@@ -4,7 +4,7 @@ Android 升级互动直播组件版本只需修改项目 'app/build.gradle' 脚�
 
 ```groovy
 dependencies {
-  // 使用 2.0.0 版本的会议组件
+  // 使用 2.0.0 版本的互动直播组件
   implementation 'com.netease.yunxin.kit.live:livekit:2.0.0'
 }
 ```

@@ -1,10 +1,10 @@
 # 跑通Android示例项目
 
-网易智慧企业 在 GitHub 上提供一个开源的互动直播组件示例项目 [NELiveKit]()。本文介绍如何快速跑通该示例项目，体验互动直播功能。示例代码中包含了详细的API调用场景、参数封装以及回调处理。
+网易智慧企业 在 GitHub 上提供一个开源的互动直播组件示例项目 [NELiveKit](https://github.com/netease-kit/NELiveKit)。本文介绍如何快速跑通该示例项目，体验互动直播功能。示例代码中包含了详细的API调用场景、参数封装以及回调处理。
 
 示例项目包含的功能如下：
 
-- 通过账号、密码完成NELiveKit登录鉴权；注销登录
+- 通过账号、token完成NELiveKit登录鉴权；注销登录
 - 创建直播间、加入直播间
 - 直播间内提供的其他功能(如邀请PK等)
 
@@ -36,7 +36,7 @@
 
   2. 配置示例项目
        考以下步骤配置示例项目：
-        - 克隆[NELiveKit]() 仓库至本地.
+        - 克隆[NELiveKit](https://github.com/netease-kit/NELiveKit) 仓库至本地.
         - 找到`NELiveKit/SampleCode/Android` 示例项目文件夹，在 `app/src/main/res/values/strings.xml` 文件中填写你从云信控制台获取的AppKey
           ```
           <?xml version="1.0" encoding="utf-8"?>
