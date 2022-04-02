@@ -1,6 +1,6 @@
 ## 概述
 
-互动直播iOS SDK提供了一套简单易用的接口，允许开发者通过调用NELiveKit SDK(以下简称SDK)提供的API，快速地集成互动直播功能至现有Android应用中。
+互动直播iOS SDK提供了一套简单易用的接口，允许开发者通过调用NELiveKit SDK(以下简称SDK)提供的API，快速地集成互动直播功能至现有iOS应用中。
 
 ## 快速接入
 
